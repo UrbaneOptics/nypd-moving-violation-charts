@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nypd-moving-violation-charts/static/css/main.b100e6da.chunk.css",
-    "main.js": "/nypd-moving-violation-charts/static/js/main.7ea23493.chunk.js",
-    "main.js.map": "/nypd-moving-violation-charts/static/js/main.7ea23493.chunk.js.map",
-    "runtime-main.js": "/nypd-moving-violation-charts/static/js/runtime-main.76ed3d91.js",
-    "runtime-main.js.map": "/nypd-moving-violation-charts/static/js/runtime-main.76ed3d91.js.map",
-    "static/js/2.3f67fdb7.chunk.js": "/nypd-moving-violation-charts/static/js/2.3f67fdb7.chunk.js",
-    "static/js/2.3f67fdb7.chunk.js.map": "/nypd-moving-violation-charts/static/js/2.3f67fdb7.chunk.js.map",
-    "index.html": "/nypd-moving-violation-charts/index.html",
-    "precache-manifest.70c82daa4195cb3f17af96264fb7547c.js": "/nypd-moving-violation-charts/precache-manifest.70c82daa4195cb3f17af96264fb7547c.js",
-    "service-worker.js": "/nypd-moving-violation-charts/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/nypd-moving-violation-charts/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/nypd-moving-violation-charts/static/media/logo.25bf045c.svg"
+    "main.css": "/nypd-moving-violation-charts/index.html/static/css/main.b100e6da.chunk.css",
+    "main.js": "/nypd-moving-violation-charts/index.html/static/js/main.e5d17937.chunk.js",
+    "main.js.map": "/nypd-moving-violation-charts/index.html/static/js/main.e5d17937.chunk.js.map",
+    "runtime-main.js": "/nypd-moving-violation-charts/index.html/static/js/runtime-main.bfadf472.js",
+    "runtime-main.js.map": "/nypd-moving-violation-charts/index.html/static/js/runtime-main.bfadf472.js.map",
+    "static/js/2.a9a79a67.chunk.js": "/nypd-moving-violation-charts/index.html/static/js/2.a9a79a67.chunk.js",
+    "static/js/2.a9a79a67.chunk.js.map": "/nypd-moving-violation-charts/index.html/static/js/2.a9a79a67.chunk.js.map",
+    "index.html": "/nypd-moving-violation-charts/index.html/index.html",
+    "precache-manifest.19d96fdd6595ac25309ca4dff3aac7dc.js": "/nypd-moving-violation-charts/index.html/precache-manifest.19d96fdd6595ac25309ca4dff3aac7dc.js",
+    "service-worker.js": "/nypd-moving-violation-charts/index.html/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/nypd-moving-violation-charts/index.html/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/nypd-moving-violation-charts/index.html/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.76ed3d91.js",
-    "static/js/2.3f67fdb7.chunk.js",
+    "static/js/runtime-main.bfadf472.js",
+    "static/js/2.a9a79a67.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.7ea23493.chunk.js"
+    "static/js/main.e5d17937.chunk.js"
   ]
 }
