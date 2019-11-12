@@ -1,5 +1,10 @@
 {
   "name": "nypd-moving-violation-charts",
+  "author": {
+    "name": "Joe James-Rodriguez",
+    "email": "joe@urbaneoptics.com",
+    "url": "https://www.urbaneoptics.com"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
