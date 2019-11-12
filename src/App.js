@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MVChart from './MVChart.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h2>NYPD Moving Violations <small style={{fontSize: '8px' }}>v0.1</small></h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Select a Precinct or Bureau to get started
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <MVChart />
+        <small>Comments/Suggestions? email joe@urbaneoptics.com</small>
+      <small>Data retrieved from <a href="https://github.com/UrbaneOptics/nyc-moving-violation-data">github.com/UrbaneOptics/nyc-moving-violation-data</a></small>
       </header>
+      
     </div>
   );
 }
