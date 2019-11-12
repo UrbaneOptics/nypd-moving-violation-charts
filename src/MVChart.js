@@ -108,7 +108,8 @@ export default class MVChart extends React.Component {
   }
 
   handlePrecinctSelection(e) {
-    this.setState({precinct: e.target.value});
+    const precinct = e.target.value;
+    this.setState({precinct});
     fetch(`https://urbaneoptics.github.io/nyc-moving-violation-data/data/json/aggregates/${e.target.value}_aggregate.json`)
       .then((response) => response.json())
       .then((data) => {
@@ -116,7 +117,7 @@ export default class MVChart extends React.Component {
         const newDatasets = [...this.state.data.datasets];
         const months = Object.keys(data);
         newDatasets[0].data = months.map((month) => data[month][this.state.violation]);
-        newDatasets[0].label = `${e.target.value} Precinct/Bureau ${this.state.violation} violations written`
+        newDatasets[0].label = `${precinct} Precinct/Bureau ${this.state.violation} violations written`
         this.setState({data: {...this.state.data, labels: months, datasets: newDatasets }})
       })
   }
