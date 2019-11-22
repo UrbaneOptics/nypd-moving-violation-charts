@@ -1,5 +1,9 @@
+html, body, #root, .App {
+  height: 100%;
+}
 .App {
   text-align: center;
+  height: 100%;
 }
 body {
   background-color: #282c34;
@@ -13,7 +17,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  height:20vh;
+  height:20%;
 }
 
 .App-header > p {
@@ -25,14 +29,11 @@ body {
 }
 
 .App-body {
-  height: 80vh;
+  display: flex;
+  height:80%;
 }
 
-.App-footer {
-  padding-top: 12px; 
-}
-
-.App-body > p, .App-footer > p {
+.App-body > p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -50,4 +51,54 @@ option {
 
 button {
   background-color: white;
+}
+
+.chart {
+  margin: auto;
+  width: 95%;
+}
+
+.left {
+  border-right:solid 1px grey;
+  height: 100%;
+  padding: 12px;
+  flex-basis: 20%;
+}
+
+.right {
+  flex: auto;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 4px;
+  margin: 13px;
+}
+
+.button__add {
+  color: #d6d5d5;
+  background-color: rgba(58, 132, 86, .7);
+  border-color: rgba(58, 132, 86, .7);
+}
+
+.button__remove {
+  color: #d6d5d5;
+  background-color: rgba(93, 18, 11, .68);
+  border-color: rgba(93, 18, 11, .68);
+  
+}
+.select__text {
+  font-weight: 600;
+  color: #aab0b7;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #aab0b7;
+}
+
+select {
+  background-color: #26272b;
+  margin: 8px 0;
+}
+
+a:visited {
+  color: #aab0b7;
 }

@@ -86,31 +86,35 @@ export default class MVChart extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <p>
-          Select a Precinct or Bureau to get started
-        </p>
-        <div>
-          {
-            
-            this.state.data.datasets.map((_, index) => {
-              return (
-                <select key={index} onChange={(e) => this.handlePrecinctSelection(e, index)} defaultValue={index === 0 ? "city" : ""}>
-                  {PRECINCTS.map((p) => <option key={p.value} value={p.value}>{p.title}</option>)}
-                </select>
-              )
-            })
-          }
+        <div className="left"> 
+          <p className="select__text">Select a Precinct or Bureau</p>
+          <div>
+            {
+              
+              this.state.data.datasets.map((_, index) => {
+                return (
+                  <select key={index} onChange={(e) => this.handlePrecinctSelection(e, index)} defaultValue={index === 0 ? "city" : ""}>
+                    {PRECINCTS.map((p) => <option key={p.value} value={p.value}>{p.title}</option>)}
+                  </select>
+                )
+              })
+            }
+          </div>
+          <div>
+          {this.state.data.datasets.length < 5 && <button className="button button__add" onClick={(e) => this.handleAddPrecinct(e)}>Add a precinct</button>}
+            {this.state.data.datasets.length > 1 && <button className="button button__remove" onClick={(e) => this.handleRemovePrecinct(e)}>Remove last precinct</button>}
+          </div>
+          <p className="select__text">Select a moving violation</p>
+          <select value={VIOLATION_TYPES.last} onChange={(e) => this.handleViolationTypeSelection(e)}>
+            {VIOLATION_TYPES.map((type) => <option key={type} value={type}>{type}</option>)}
+          </select>
         </div>
-        <div>
-        {this.state.data.datasets.length < 5 && <button onClick={(e) => this.handleAddPrecinct(e)}>Add a precinct</button>}
-        {this.state.data.datasets.length > 1 && <button onClick={(e) => this.handleRemovePrecinct(e)}>Remove last precinct</button>}
+        <div className="right">
+          <div className="chart">
+            <Bar data={this.state.data} height={500} width={900}/>
+          </div>
         </div>
-        <select value={VIOLATION_TYPES.last} onChange={(e) => this.handleViolationTypeSelection(e)}>
-          {VIOLATION_TYPES.map((type) => <option key={type} value={type}>{type}</option>)}
-        </select>
-        <div>
-          <Bar data={this.state.data} height={500} width={1000}/>
-        </div>
+        
       </React.Fragment>
     );
   }
